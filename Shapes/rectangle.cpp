@@ -1,8 +1,8 @@
 #include <iostream>
-#include "shapes_type.hpp"
-#include "shapes_func.hpp"
+#include "rectangle_type.hpp"
+#include "rectangle.hpp"
 
-int main()
+int rectangle()
 {
     
     std::cout << "Please input the length: ";
@@ -12,7 +12,7 @@ int main()
     std::cin >> shapes::width;
     std::cout << "\n";
 
-    std::cout << "The total area of the rectangle is: " << shapes::rectangleArea(shapes::length, shapes::width);
+    std::cout << "The total area of the rectangle is: " << rectangle::area << area(shapes::length, shapes::width);
      
      return 0;
 }

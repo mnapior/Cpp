@@ -1,22 +1,11 @@
 #ifndef RECTANGLE_FUNC_HPP
 #define RECTANGLE_FUNC_HPP
 
-#include "rectangle_type.hpp"
+//#include "rectangle_type.hpp"
 
-namespace shapes
+namespace rectangle
 {
-    class RectangleFunc
-    {
-        public:
-            rectangleOutputs run(const rectangleInputs)
-            
-        private:
-            float area(float length, float height)
-            {
-                return length * height;
-            };
-    };
-    
+    class RectangleFunc;
 }
 
 #endif

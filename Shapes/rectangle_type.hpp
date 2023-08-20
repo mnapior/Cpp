@@ -1,19 +1,19 @@
 #ifndef RECTANGLE_TYPE_HPP
 #define RECTANGLE_TYPE_HPP
 
-namespace shapes
+namespace rectangle
 {
-    struct rectangleInputs
+    struct Inputs
     {
         float length{0};
         float width{0};
         float height{0}; 
-    }
+    };
 
-    struct rectangleOutputs
+    struct Outputs
     {
         float area{0};
-    }
+    };
 }
 
 #endif
