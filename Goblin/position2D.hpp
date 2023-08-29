@@ -5,22 +5,14 @@
 
 class Position2D
 {
-private:
-    int m_x {0};
-    int m_y {0};
+    private:
+        int m_x {0};
+        int m_y {0};
 
-public:
-    Position2D(int x, int y) : 
-        m_x{ x }, m_y{ y }
-    {}
+    public:
+        Position2D(int x, int y);
 
-    // Access functions
-    void setPosition(int x, int y)
-    {
-        m_x = x;
-        m_y = y;
-    }
-
+        void setPosition(int x, int y);
 };
 
 #endif
