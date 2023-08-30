@@ -20,6 +20,8 @@ class Goblin
 
         void loseHealth(int damage);
 
+        friend std::ostream& operator<<(std::ostream& out, const Goblin& goblin);
+
 };
 
 #endif

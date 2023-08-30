@@ -11,3 +11,9 @@ void Position2D::setPosition(int x, int y)
     m_x = x;
     m_y = y;
 }
+
+std::ostream& operator<<(std::ostream& out, const Position2D& position)
+{
+    out << '(' << position.m_x << ", " << position.m_y << ')';
+    return out;
+}

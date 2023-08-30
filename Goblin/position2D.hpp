@@ -13,6 +13,8 @@ class Position2D
         Position2D(int x, int y);
 
         void setPosition(int x, int y);
+
+        friend std::ostream& operator<<(std::ostream& out, const Position2D& position);
 };
 
 #endif
