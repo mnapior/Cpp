@@ -1,4 +1,6 @@
 #include "goblin.hpp"
+#include "health.hpp"
+#include "position2D.hpp"
 #include <iostream>
 
 
@@ -18,6 +20,6 @@ void Goblin::loseHealth(int damage)
 
 std::ostream &operator<<(std::ostream &out, const Goblin &goblin)
 {
-    out << goblin.m_name << " is at " << goblin.m_position;
+    out << goblin.m_name << " is at " << goblin.m_position << " with a current health of " << goblin.m_health << '\n';
     return out;
 }

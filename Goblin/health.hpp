@@ -12,6 +12,8 @@ class Health
         Health(int health);
 
         void takeDamage(int damage);
+
+        friend std::ostream &operator<<(std::ostream &out, const Health &health);
 };
 
 #endif

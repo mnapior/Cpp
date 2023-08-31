@@ -9,8 +9,8 @@
 class Goblin
 {
     private:
-        Health m_health {10};
         std::string m_name {""};
+        Health m_health {10};
         Position2D m_position {0,0};
 
     public:
@@ -20,7 +20,7 @@ class Goblin
 
         void loseHealth(int damage);
 
-        friend std::ostream& operator<<(std::ostream& out, const Goblin& goblin);
+        friend std::ostream &operator<<(std::ostream &out, const Goblin &goblin);
 
 };
 
