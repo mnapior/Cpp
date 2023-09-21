@@ -1,7 +1,7 @@
 #include "slotmachine.hpp"
 #include <iostream>
 
-SlotMachine::SlotMachine(const USDMoney &total) : m_total{ total }
+SlotMachine::SlotMachine(const Money &total) : m_total{ total }
 {}
 
 std::ostream &operator<<(std::ostream &out, const SlotMachine &slotmachine)
