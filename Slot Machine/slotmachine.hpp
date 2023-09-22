@@ -8,14 +8,15 @@ class SlotMachine
 {
 private:
     Money m_total {0,0};
+
 public:
     SlotMachine(const Money &total);
 
+    friend SlotMachine &operator +(SlotMachine &total, const SlotMachine &addDollar);
+
     friend std::ostream& operator<<(std::ostream &out, const SlotMachine &slotMachine);
 
-    //void printSlotMachineBoard();
-
-    void addMoreDollars(const SlotMachine &slotMachine);
+    void addDollars(int dollars);
 };
 
 #endif 
