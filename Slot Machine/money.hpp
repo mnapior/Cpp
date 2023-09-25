@@ -11,9 +11,11 @@ private:
 public:
     Money(int dollars, int cents);
 
+    Money(const int dollars);
+
     friend std::ostream &operator<<(std::ostream &out, const Money &total);
 
-    friend Money &operator +(Money &dollar, const Money &addDollar);
+    friend Money operator +(const Money dollar, const Money addDollar);
 
     //int centToDollar() const;
 

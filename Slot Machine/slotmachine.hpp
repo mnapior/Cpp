@@ -12,10 +12,8 @@ private:
 public:
     SlotMachine(const Money &total);
 
-    friend SlotMachine &operator +(SlotMachine &total, const SlotMachine &addDollar);
-
     friend std::ostream& operator<<(std::ostream &out, const SlotMachine &slotMachine);
-
+    
     void addDollars(int dollars);
 };
 

@@ -3,14 +3,17 @@
 Money::Money(int dollars, int cents) : m_dollars{ dollars }, m_cents{ cents }
 {}
 
-std::ostream &operator<<(std::ostream &out, const Money &total)
-    {
-        out << "$" << total.m_dollars << "." << total.m_cents;
-        return out;
-    }
+Money::Money(int dollars) : m_dollars {dollars}
+{}
 
-Money &operator +(Money &totalDollars, const Money &addDollar)
+std::ostream &operator<<(std::ostream &out, const Money &total)
 {
-    totalDollars.m_dollars = totalDollars.m_dollars + addDollar.m_dollars;
-    return totalDollars.m_dollars;
+    out << "$" << total.m_dollars << "." << total.m_cents;
+    return out;
+}
+
+Money operator +(const Money dollar, const Money addDollar)
+{
+    std::cout << "You are adding " << dollar << " to " << addDollar << '\n';
+    return {dollar.m_dollars + addDollar.m_dollars, dollar.m_cents + addDollar.m_cents};
 }
